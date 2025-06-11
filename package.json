@@ -1,0 +1,19 @@
+{
+  "name": "js-scheduler-bot",
+  "version": "1.0.0",
+  "description": "AI-powered scheduling assistant with Google Calendar integration",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "node main.js"
+  },
+  "dependencies": {
+    "googleapis": "^128.0.0",
+    "dotenv": "^16.3.1",
+    "readline-sync": "^1.4.10",
+    "node-fetch": "^2.7.0"
+  },
+  "keywords": ["scheduling", "ai", "google-calendar", "assistant"],
+  "author": "Your Name",
+  "license": "MIT"
+}
