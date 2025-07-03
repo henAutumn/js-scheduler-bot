@@ -54,8 +54,12 @@ class OpenAIClient {
           messages: [{ role: "user", content: prompt }],
         }),
       });
-
+      if (response.status !== 200) {
+        console.error(`Error: ${response.statusText}`);
+        return null;
+      }
       const data = await response.json();
+
       const result = data.choices[0].message.content;
       console.log(`Got response: ${result}`);
       return result;
@@ -69,6 +73,7 @@ class OpenAIClient {
     console.log(`Explaining schedule for ${scheduledTimes.length} sessions...`);
 
     const timesText = this.formatTimesForExplanation(scheduledTimes);
+
     const activityName = this.extractActivityName(activityInfo);
     const urgencyContext = this.getUrgencyContext(urgency, activityInfo);
 

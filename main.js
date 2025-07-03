@@ -90,7 +90,8 @@ class SchedulingBot {
           })}`
         );
       });
-
+      //this should be a response back to the client
+      // so this functionn needs to be split into two functions
       const createEvents = readline
         .question(
           "\n📅 Would you like me to add these to your Google Calendar? (y/n): "

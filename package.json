@@ -4,16 +4,24 @@
   "description": "AI-powered scheduling assistant with Google Calendar integration",
   "main": "main.js",
   "scripts": {
-    "start": "node main.js",
-    "test": "node main.js"
+    "start": "node server.js",
+    "dev": "node server.js",
+    "cli": "node main.js"
   },
   "dependencies": {
-    "googleapis": "^128.0.0",
+    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
-    "readline-sync": "^1.4.10",
-    "node-fetch": "^2.7.0"
+    "express": "^5.1.0",
+    "googleapis": "^128.0.0",
+    "node-fetch": "^2.7.0",
+    "readline-sync": "^1.4.10"
   },
-  "keywords": ["scheduling", "ai", "google-calendar", "assistant"],
+  "keywords": [
+    "scheduling",
+    "ai",
+    "google-calendar",
+    "assistant"
+  ],
   "author": "Your Name",
   "license": "MIT"
 }
